@@ -28,6 +28,7 @@ namespace Animals
             bY = age();
             bD = birthDate;
         }
+        ~Elephant() => Console.WriteLine("Finalizowanie");
         public int age() => (int)((DateTime.Now - birthDate).Days / 360);
         public static void ElephantPresentation(Elephant elephant)
         {
