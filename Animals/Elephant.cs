@@ -23,6 +23,11 @@ namespace Animals
             population++;
             birthDate = birthDay;
         }
+        public void Deconstruct(out int bY,out DateTime bD)
+        {
+            bY = age();
+            bD = birthDate;
+        }
         public int age() => (int)((DateTime.Now - birthDate).Days / 360);
         public static void ElephantPresentation(Elephant elephant)
         {
@@ -37,6 +42,5 @@ namespace Animals
             else
                 Console.WriteLine($"We have {Elephant.population} elephants");
         }
-
     }
 }

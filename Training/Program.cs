@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Animals;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -54,7 +55,10 @@ namespace Training
             //Bee bee2 = Bee.NewBee("Gucio");
             //Console.WriteLine(bee2?.name ?? "Nic");
 
-
+            Elephant p = new Elephant(new DateTime(2012, 2, 3));
+            Console.WriteLine(p.birthDate);
+            var (_,d) = p;
+            Console.WriteLine(d);
         }
         private static void Program_Process(object sender, Person e)
         {
@@ -72,7 +76,7 @@ namespace Training
 
             return output;
         }
-        static void metodax(object x)
+        void metodax(object x)
         {
             switch (x)
             {
@@ -89,6 +93,15 @@ namespace Training
                     Console.WriteLine("Default");
                     break;
             }
+        }
+        static int multipluy(params int[] vs)
+        {
+            int output = 1;
+            foreach (var item in vs)
+            {
+                output *= item;
+            }
+            return output;
         }
     }
 }
