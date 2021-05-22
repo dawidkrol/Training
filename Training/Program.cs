@@ -1,8 +1,10 @@
 ﻿using Animals;
+using Employer;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
+using System.Threading.Tasks;
 
 namespace Training
 {
@@ -18,14 +20,14 @@ namespace Training
             //Process += Program_Process;
             //List<Person> people = GetPeople();
             //people = people.OrderByDescending(x => x._name).ThenBy(x => x._lastName).ToList<Person>();
-            //foreach (var p in people)
+            //foreach (var q in people)
             //{
-            //    Process?.Invoke(p, p);
+            //    Process?.Invoke(q, q);
             //}
             ////people.ForEach(x => Process?.Invoke(x, x));
             //Parallel.ForEach(people, x => Process?.Invoke(x, x));
 
-            //var bob = (Name:"Bob",Age: 23);
+            //var bob = (Name: "Bob", Age: 23);
             //Console.WriteLine(bob.Age);
             //(int row, int column) = position();
             //Console.WriteLine(row);
@@ -45,11 +47,8 @@ namespace Training
             //Elephant.ElephantsPopulationPresentation();
 
 
-            //Console.WriteLine(1<<5);
+            //Console.WriteLine(1 << 5);
             //metodax(null);
-
-            //var bee = Bee.Constructor("Maja");
-            //Console.WriteLine(bee.name);
 
             //Bee bee = Bee.NewBee("Maja");
             //Console.WriteLine(bee?.name);
@@ -58,15 +57,13 @@ namespace Training
 
             //Elephant p = new Elephant(new DateTime(2012, 2, 3));
             //Console.WriteLine(p.birthDate);
-            //var (_,d) = p;
+            //var (_, d) = p;
             //Console.WriteLine(d);
 
 
-            Elephant p = new Elephant(new DateTime(2012, 2, 3));
-            Console.WriteLine(p.birthDate);
+            Elephant r = new Elephant(new DateTime(2012, 2, 3));
 
-            Console.WriteLine(1);
-            Thread.Sleep(300);
+            
         }
         private static void Program_Process(object sender, Person e)
         {
@@ -84,7 +81,7 @@ namespace Training
 
             return output;
         }
-        void metodax(object x)
+        static void metodax(object x)
         {
             switch (x)
             {

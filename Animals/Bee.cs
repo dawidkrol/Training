@@ -20,6 +20,7 @@ namespace Animals
             return output;
         }
         private Bee(string name) => this.name = name;
+        ~Bee() => Console.WriteLine("Finalizowanie");
         public string name { get; }
     }
 }
