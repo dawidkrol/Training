@@ -6,21 +6,33 @@ using System.Threading.Tasks;
 
 namespace Animals
 {
-    public class Bee
+    public class Bee : IAnimal
     {
         private static bool canI = true;
-        public static Bee NewBee(string name)
+        public static Bee NewBee(string name,DateTime dateTime)
         {
             Bee output = null;
             if (canI)
             {
-                output = new Bee(name);
+                output = new Bee(name,dateTime);
                 canI = false;
             }
             return output;
         }
-        private Bee(string name) => this.name = name;
-        ~Bee() => Console.WriteLine("Finalizowanie");
+
+        public int age()
+        {
+            return (int)((DateTime.Now - birthDate).Days / 360);
+        }
+
+        private Bee(string name, DateTime dateTime)
+        {
+            this.name = name;
+            birthDate = dateTime;
+        }
+        ~Bee() => Console.WriteLine("Finalizowanie Bee");
         public string name { get; }
+
+        public DateTime birthDate { get; }
     }
 }

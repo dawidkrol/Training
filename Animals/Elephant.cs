@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Animals
 {
-    public class Elephant
+    public class Elephant : Animal, IAnimal
     {
         public static uint population
         {
@@ -23,22 +23,18 @@ namespace Animals
             population++;
             birthDate = birthDay;
         }
-        public void Deconstruct(out int bY,out DateTime bD)
+        public void Deconstruct(out int bY, out DateTime bD)
         {
             bY = age();
             bD = birthDate;
         }
         ~Elephant() => Console.WriteLine("Finalizowanie");
         public int age() => (int)((DateTime.Now - birthDate).Days / 360);
-        public static void ElephantPresentation(Elephant elephant)
-        {
-            Console.WriteLine($"Elephant was born on {elephant.birthDate.ToShortDateString()}, so he has {elephant.age()} years");
-        }
         public static void ElephantsPopulationPresentation()
         {
-            if(Elephant.population == 0)
+            if (Elephant.population == 0)
                 Console.WriteLine("We haven't elephants.");
-            else if(Elephant.population == 1)
+            else if (Elephant.population == 1)
                 Console.WriteLine($"We have {Elephant.population} elephant");
             else
                 Console.WriteLine($"We have {Elephant.population} elephants");

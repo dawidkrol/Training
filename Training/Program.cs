@@ -62,8 +62,14 @@ namespace Training
 
 
             Elephant r = new Elephant(new DateTime(2012, 2, 3));
+            Animal.Presentation(r);
+            Bee bee = Bee.NewBee("maja", new DateTime(2012, 2, 3));
+            Animal.Presentation(bee);
+            Bee bee1 = Bee.NewBee("maja", new DateTime(2012, 2, 3));
+            Console.WriteLine(bee1?.name ?? "Brak");
 
-            
+
+
         }
         private static void Program_Process(object sender, Person e)
         {
@@ -99,12 +105,21 @@ namespace Training
                     break;
             }
         }
-        static int multipluy(params int[] vs)
+        static int multiplay(params int[] vs)
         {
             int output = 1;
             foreach (var item in vs)
             {
                 output *= item;
+            }
+            return output;
+        }
+        static int NewtonSign(int a)
+        {
+            int output = 1;
+            for (int i = 1; i <= a; i++)
+            {
+                output *= i;
             }
             return output;
         }
