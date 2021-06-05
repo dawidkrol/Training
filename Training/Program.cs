@@ -6,6 +6,7 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using extensionMethods;
+using System.Reflection;
 
 namespace Training
 {
@@ -69,7 +70,9 @@ namespace Training
             //Bee bee1 = Bee.NewBee("maja", new DateTime(2012, 2, 3));
             //Console.WriteLine(bee1?.name ?? "Brak");
 
-            //Console.WriteLine("abc".FirstChar());
+            Console.WriteLine("".FirstChar());
+
+            //string key = string.Join("", Assembly.GetExecutingAssembly().GetName().GetPublicKeyToken().Select(b => b.ToString("x2")));
         }
         private static void Program_Process(object sender, Person e)
         {

@@ -5,7 +5,6 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
-[assembly: InternalsVisibleToAttribute("String")]
 namespace extensionMethods
 {
     public static class StringExtension
@@ -18,7 +17,7 @@ namespace extensionMethods
             }
             catch
             {
-                throw;
+                throw new ArgumentNullException();
             }
 
         }
