@@ -8,9 +8,9 @@ namespace Animals
 {
     public class Animal
     {
-        public static void Presentation(IAnimal elephant)
+        public static void Presentation(IAnimal animal)
         {
-            Console.WriteLine($"{elephant.GetType().Name} was born on {elephant.birthDate.ToShortDateString()}, so he has {elephant.age()} years");
+            Console.WriteLine($"{animal.GetType().Name} was born on {animal.birthDate.ToShortDateString()}, so he has {animal.age()} years");
         }
     }
 }

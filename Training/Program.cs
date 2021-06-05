@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
+using extensionMethods;
 
 namespace Training
 {
@@ -61,15 +62,14 @@ namespace Training
             //Console.WriteLine(d);
 
 
-            Elephant r = new Elephant(new DateTime(2012, 2, 3));
-            Animal.Presentation(r);
-            Bee bee = Bee.NewBee("maja", new DateTime(2012, 2, 3));
-            Animal.Presentation(bee);
-            Bee bee1 = Bee.NewBee("maja", new DateTime(2012, 2, 3));
-            Console.WriteLine(bee1?.name ?? "Brak");
+            //Elephant r = new Elephant(new DateTime(2012, 2, 3));
+            //Animal.Presentation(r);
+            //Bee bee = Bee.NewBee("maja", new DateTime(2012, 2, 3));
+            //Animal.Presentation(bee);
+            //Bee bee1 = Bee.NewBee("maja", new DateTime(2012, 2, 3));
+            //Console.WriteLine(bee1?.name ?? "Brak");
 
-
-
+            //Console.WriteLine("abc".FirstChar());
         }
         private static void Program_Process(object sender, Person e)
         {

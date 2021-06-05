@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Training", "Training\Traini
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Employer", "Employer\Employer.csproj", "{4FE86722-7838-41B2-9FFD-405EC4EADB16}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Animals", "Animals\Animals.csproj", "{87E8C482-7DDE-4086-BCB3-6643E81BB32C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Animals", "Animals\Animals.csproj", "{87E8C482-7DDE-4086-BCB3-6643E81BB32C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "extensionMethods", "extensionMethods\extensionMethods.csproj", "{8327680E-40E3-4D8A-B950-4849E02C18F8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{87E8C482-7DDE-4086-BCB3-6643E81BB32C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{87E8C482-7DDE-4086-BCB3-6643E81BB32C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{87E8C482-7DDE-4086-BCB3-6643E81BB32C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8327680E-40E3-4D8A-B950-4849E02C18F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8327680E-40E3-4D8A-B950-4849E02C18F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8327680E-40E3-4D8A-B950-4849E02C18F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8327680E-40E3-4D8A-B950-4849E02C18F8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
