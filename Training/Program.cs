@@ -7,6 +7,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using extensionMethods;
 using System.Reflection;
+using static IteratorTraining.Iterators;
 
 namespace Training
 {
@@ -70,7 +71,12 @@ namespace Training
             //Bee bee1 = Bee.NewBee("maja", new DateTime(2012, 2, 3));
             //Console.WriteLine(bee1?.name ?? "Brak");
 
-            Console.WriteLine("".FirstChar());
+            //Console.WriteLine("".FirstChar());
+
+            foreach (var item in "dawid".OtherWay())
+            {
+                Console.WriteLine(item);
+            }
 
             //string key = string.Join("", Assembly.GetExecutingAssembly().GetName().GetPublicKeyToken().Select(b => b.ToString("x2")));
         }

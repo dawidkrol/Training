@@ -9,6 +9,7 @@
     <ProjectReference Include="..\Animals\Animals.csproj" />
     <ProjectReference Include="..\Employer\Employer.csproj" />
     <ProjectReference Include="..\extensionMethods\extensionMethods.csproj" />
+    <ProjectReference Include="..\IteratorTraining\IteratorTraining.csproj" />
   </ItemGroup>
 
 </Project>
