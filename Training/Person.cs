@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Training
 {
-    public class Person : IPerson
+    public class Person :EventArgs, IPerson
     {
         public Person(string Name,string LastName)
         {
@@ -15,7 +15,7 @@ namespace Training
         }
         public Person(string LastName) : this("", LastName) { }
 
-        public string _name { get; private set; }
+        public string _name { get;private set; }
         public string _lastName { get; private set; }
     }
 }

@@ -25,7 +25,7 @@ namespace Training
             //people = people.OrderByDescending(x => x._name).ThenBy(x => x._lastName).ToList<Person>();
             //foreach (var q in people)
             //{
-            //    Process?.Invoke(q, q);
+            //    OnProcess(q);
             //}
             ////people.ForEach(x => Process?.Invoke(x, x));
             //Parallel.ForEach(people, x => Process?.Invoke(x, x));
@@ -73,12 +73,27 @@ namespace Training
 
             //Console.WriteLine("".FirstChar());
 
-            foreach (var item in "dawid".OtherWay())
-            {
-                Console.WriteLine(item);
-            }
+
+            //var dude = new { name = "Dawid", Lastname = "Król" };
+            //var dude = (Name:"Dawid", Lastname:"Król");
+
+            //foreach (var item in "dawid".OtherWay())
+            //{
+            //    Console.WriteLine(item);
+            //}
 
             //string key = string.Join("", Assembly.GetExecutingAssembly().GetName().GetPublicKeyToken().Select(b => b.ToString("x2")));
+
+            //Menager menager = new Menager();
+            //menager.name = "Dawid";
+            //menager.surName = "Król";
+
+            //(string imie, string nazwisko) = menager;
+            //Console.WriteLine(imie);
+        }
+        protected static void OnProcess(Person e)
+        {
+            Process?.Invoke(e, e);
         }
         private static void Program_Process(object sender, Person e)
         {
