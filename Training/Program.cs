@@ -8,6 +8,8 @@ using System.Threading.Tasks;
 using extensionMethods;
 using System.Reflection;
 using static IteratorTraining.Iterators;
+using System.Xml;
+using System.Data;
 
 namespace Training
 {
@@ -90,6 +92,10 @@ namespace Training
 
             //(string imie, string nazwisko) = menager;
             //Console.WriteLine(imie);
+
+            Guid guid = Guid.NewGuid();
+            Console.WriteLine(guid.ToString());
+            
         }
         protected static void OnProcess(Person e)
         {
