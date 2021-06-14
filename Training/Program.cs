@@ -93,8 +93,18 @@ namespace Training
             //(string imie, string nazwisko) = menager;
             //Console.WriteLine(imie);
 
-            Guid guid = Guid.NewGuid();
-            Console.WriteLine(guid.ToString());
+            //Guid guid = Guid.NewGuid();
+            //Console.WriteLine(guid.ToString());
+
+            Person person = new Person("Dawid", "Król");
+            Person person1 = new Person("Dawid", "Król");
+            Person person2 = new Person("Anna", "Anna");
+
+            Console.WriteLine(person.Equals(person1));
+            Console.WriteLine(person.Equals(person2));
+
+            Console.WriteLine(person.CompareTo(person2));
+            Console.WriteLine(person.CompareTo(person1));
             
         }
         protected static void OnProcess(Person e)
