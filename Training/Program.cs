@@ -10,6 +10,9 @@ using System.Reflection;
 using static IteratorTraining.Iterators;
 using System.Xml;
 using System.Data;
+using System.Diagnostics;
+using System.Globalization;
+using IteratorTraining;
 
 namespace Training
 {
@@ -96,16 +99,45 @@ namespace Training
             //Guid guid = Guid.NewGuid();
             //Console.WriteLine(guid.ToString());
 
-            Person person = new Person("Dawid", "Król");
-            Person person1 = new Person("Dawid", "Król");
-            Person person2 = new Person("Anna", "Anna");
+            //Person person = new Person("Dawid", "Król");
+            //Person person1 = new Person("Dawid", "Król");
+            //Person person2 = new Person("Anna", "Anna");
 
-            Console.WriteLine(person.Equals(person1));
-            Console.WriteLine(person.Equals(person2));
+            //Console.WriteLine(person.Equals(person1));
+            //Console.WriteLine(person.Equals(person2));
 
-            Console.WriteLine(person.CompareTo(person2));
-            Console.WriteLine(person.CompareTo(person1));
-            
+            //Console.WriteLine(person.CompareTo(person2));
+            //Console.WriteLine(person.CompareTo(person1));
+
+            //DateTime dateTime = DateTime.Now;
+            //Console.WriteLine(dateTime.ToString("o"));
+            //string c = XmlConvert.ToString(dateTime, XmlDateTimeSerializationMode.Utc);
+            //Console.WriteLine(c);
+
+            //ProcessStartInfo processStartInfo = new ProcessStartInfo
+            //{
+            //    FileName = "cmd.exe",
+            //    Arguments = "/c ipconfig",
+            //    RedirectStandardOutput = true,
+            //    UseShellExecute = false
+            //};
+            //System.Diagnostics.Process pro = System.Diagnostics.Process.Start(processStartInfo);
+            //Console.WriteLine(pro.StandardOutput.ReadToEnd());
+
+            //CultureInfo.CurrentCulture = CultureInfo.GetCultureInfo("tr-TR");
+            //Console.WriteLine("i".ToUpper().Equals("I"));
+
+            Action<int> a = nr1;
+            a += nr2;
+            Iterators.ooo(a);
+        }
+        public static void nr1(int i)
+        {
+            Console.WriteLine($"nr1 {i}");
+        }
+        public static void nr2(int i)
+        {
+            Console.WriteLine($"nr2 {i}");
         }
         protected static void OnProcess(Person e)
         {

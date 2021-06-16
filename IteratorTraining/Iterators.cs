@@ -20,5 +20,10 @@ namespace IteratorTraining
                 yield return a[i].ToString().ToUpperInvariant();
             }
         }
+
+        public static void ooo(Action<int> action)
+        {
+            action(1);
+        }
     }
 }
