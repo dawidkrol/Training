@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Animals
 {
-    public class Bee : IAnimal
+    public class Bee : Animal,IAnimal
     {
         private static bool canI = true;
         public static Bee NewBee(string name,DateTime dateTime)
